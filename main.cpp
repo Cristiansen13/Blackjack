@@ -16,10 +16,8 @@ int main() {
 
         if (choice == '1') {
             table.StartGame();
-        } else if (choice == '2') {
-            break;
         } else {
-            std::cout << "Invalid choice. Please try again." << std::endl;
+            break;
         }
 
         std::cout << std::endl;
