@@ -35,9 +35,7 @@ private:
     Hand secondHand;
 public:
     ~SplitPlayer() override = default;
-    explicit SplitPlayer(const char nume[20]) : Player(nume) {
-        secondHand = Hand();
-    }
+    explicit SplitPlayer(const char nume[20]) : Player(nume), secondHand() {}
     Hand& GetSecondHand() override{
         return secondHand;
     }
