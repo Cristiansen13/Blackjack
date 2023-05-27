@@ -19,7 +19,7 @@ public:
         return *this;
     }
     virtual ~Player() = 0;
-    static void Surrender(Hand& hand);
+    static void Surrender(const Hand& hand);
     char *GetName() {
         return name;
     };
@@ -44,7 +44,7 @@ public:
 
 
 
-void Player::Surrender(Hand& hand) {
+void Player::Surrender(const Hand& hand) {
     if (hand.GetTotalValue() > 21)
         std::cout << "S ";
 }
