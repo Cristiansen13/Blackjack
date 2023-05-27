@@ -18,7 +18,7 @@ public:
         strcpy(name, other.name);
         return *this;
     }
-    virtual ~Player() = default;
+    virtual ~Player() = 0;
     static void Surrender(Hand& hand);
     char *GetName() {
         return name;

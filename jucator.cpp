@@ -22,3 +22,5 @@ void SplitPlayer::DisplayPlayer() {
     std::cout << "Second hand: \n";
     secondHand.Display();
 }
+
+Player::~Player() = default;
