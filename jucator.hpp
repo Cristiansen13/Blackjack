@@ -18,7 +18,6 @@ public:
         strcpy(name, other.name);
         return *this;
     }
-    ~Player() = default;
     static void Surrender(Hand& hand);
     char *GetName() {
         return name;
