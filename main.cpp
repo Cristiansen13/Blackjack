@@ -6,7 +6,7 @@
 
 int main() {
     Table table;
-    char choice;
+    char choice = '\0';
     do {
         std::cout << "Blackjack Game" << std::endl;
         std::cout << "1. Start a game" << std::endl;
