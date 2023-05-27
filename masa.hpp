@@ -166,9 +166,9 @@ void Table::StartGame() {
         if (i == 1 && split == true) {
             std::cout << "Second hand: \n";
             Hand& secondhand = players[i]->GetSecondHand();
-            int t = secondhand.GetTotalValue();
-            if (maxim < t && t <= 21) {
-                maxim = t;
+            int f = secondhand.GetTotalValue();
+            if (maxim < f && f <= 21) {
+                maxim = f;
                 strcpy(winner, players[i]->GetName());
             }
             operator<<(std::cout, secondhand);
