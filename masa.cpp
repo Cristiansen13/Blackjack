@@ -6,8 +6,7 @@
 #include <string>
 
 void Table::AddPlayer(char name[20]) {
-    auto* player = dynamic_cast<Player*>(new SplitPlayer(name));
-    players.emplace_back(player);
+    players.emplace_back(new SplitPlayer(name));
     nr_players++;
 }
 
