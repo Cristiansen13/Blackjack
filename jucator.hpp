@@ -18,6 +18,7 @@ public:
         strcpy(name, other.name);
         return *this;
     }
+    virtual ~Player() = default;
     static void Surrender(Hand& hand);
     char *GetName() {
         return name;
@@ -33,6 +34,7 @@ class SplitPlayer : public Player {
 private:
     Hand secondHand;
 public:
+    ~SplitPlayer() override = default;
     explicit SplitPlayer(const char nume[20]) : Player(nume) {
         secondHand = Hand();
     }
