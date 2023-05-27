@@ -54,3 +54,4 @@ public:
         hand.nr_cards--;
     };
 };
+
