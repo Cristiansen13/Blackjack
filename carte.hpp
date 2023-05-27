@@ -36,6 +36,7 @@ public:
         rank = static_cast<Rank>(rankDist(gen));
         suit = static_cast<Suit>(suitDist(gen));
     }
+    Card(const Card& other) = default; 
     Card& operator=(const Card& other) {
         if (this == &other)
             return *this;

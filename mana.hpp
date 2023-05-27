@@ -17,6 +17,11 @@ public:
         }
         return os;
     };
+    Hand(const Hand& other) : nr_cards(other.nr_cards) {
+        for (const auto& card : other.cards) {
+        cards.push_back(new Card(*card));
+        }
+    }
     Hand& operator=(const Hand& other) { 
         if(this == &other) 
             return *this;
