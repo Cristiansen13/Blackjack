@@ -1,1 +1,1 @@
-# OOP Project -> BlackJack
+# Proiect OOP -> BlackJack
